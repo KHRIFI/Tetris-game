@@ -1,0 +1,52 @@
+Aujourd’hui, nous vous présentons notre projet intitulé Pipeline de Données Météorologiques.
+Ce projet s’inscrit dans un contexte où les agriculteurs doivent faire face à des défis majeurs :
+Les impacts du changement climatique.
+L’optimisation des ressources comme l’eau.
+
+Pour structurer notre présentation, voici le plan que nous allons suivre :
+
+on commence par l Introduction 
+puis le Contexte et la problématique : Pourquoi ce projet est-il nécessaire ?
+on passe aux Objectifs du projet : Nos ambitions concrètes.
+presenter Architecture globale du pipeline : La structure technique.
+les Outils et technologies utilisés : Les solutions que nous avons choisies.
+en suite Implémentation du pipeline : Comment nous l’avons réalisé.
+et les Résultats obtenus : Les points forts et les apports du projet.
+et finalemt une Conclusion et perspectives : Ce que nous avons appris et les prochaines étapes.
+
+
+notre projet intitulé Pipeline de Données Météorologiques, une initiative visant à transformer l'utilisation des données climatiques dans l'agriculture moderne.
+
+Pourquoi ce projet ? L'agriculture est aujourd'hui confrontée à des défis majeurs :
+
+Le changement climatique, qui engendre des événements climatiques extrêmes tels que sécheresses ou inondations, menaçant les récoltes.
+La nécessité de répondre à la demande alimentaire croissante tout en utilisant efficacement les ressources naturelles comme l'eau.
+Les données météorologiques, lorsqu'elles sont collectées et analysées en temps réel, offrent une opportunité précieuse pour :
+
+Aider les agriculteurs à mieux planifier leurs activités.
+Réduire les impacts des aléas climatiques grâce à des recommandations pratiques comme l'arrosage intelligent.
+Notre objectif est de concevoir une solution technologique innovante pour répondre à ces problématiques.
+
+Pour répondre aux défis identifiés, nous avons créé une architecture simple mais puissante, structurée en plusieurs étapes clés :
+
+
+Nous récupérons les données météorologiques en temps réel grâce à une API fiable. Elle couvre plusieurs villes françaises et fournit des informations essentielles comme la température, l'humidité et les précipitations.
+
+Kafka agit comme une autoroute pour les données. Il les transfère rapidement et de façon sécurisée, même en cas de panne, garantissant un flux continu.
+
+
+Avec PySpark, nous enrichissons les données brutes. Par exemple, en fonction de la météo, nous générons des recommandations pratiques, comme : "arroser ou non les plantes."
+
+
+Elasticsearch assure l’indexation des données pour qu’elles soient rapidement accessibles et prêtes à être analysées.
+
+
+Grâce à Kibana, les données prennent vie sous forme de tableaux de bord interactifs. Ces visualisations aident les agriculteurs à prendre des décisions immédiates et éclairées.
+
+
+Enfin, Docker garantit que cette architecture fonctionne partout. Elle est facile à déployer, flexible, et adaptée à tout environnement.
+Exemple d'application
+Imaginez un agriculteur recevant une alerte sur son tableau de bord :
+
+"La pluie est prévue cet après-midi, pas besoin d’arroser."
+Ou encore : "Température élevée, humidité basse : un arrosage est conseillé."
